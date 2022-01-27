@@ -4,10 +4,10 @@
 use core::cell::RefCell;
 use neon::prelude::*;
 use rand::RngCore;
-use sixtyfps::ComponentHandle;
 use sixtyfps_compilerlib::langtype::Type;
 use sixtyfps_corelib::window::WindowHandleAccess;
 use sixtyfps_corelib::{ImageInner, SharedVector};
+use sixtyfps_interpreter::ComponentHandle;
 
 mod js_model;
 mod persistent_context;
