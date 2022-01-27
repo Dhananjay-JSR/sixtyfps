@@ -3,7 +3,7 @@
 
 #![doc = include_str!("README.md")]
 
-use sixtyfps_interpreter::{ComponentInstance, SharedString, Value};
+use sixtyfps_interpreter::{ComponentHandle, ComponentInstance, SharedString, Value};
 use std::future::Future;
 use std::pin::Pin;
 use std::sync::atomic::{AtomicU32, Ordering};
