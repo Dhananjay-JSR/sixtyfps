@@ -267,6 +267,6 @@ pub fn invoke_from_event_loop(func: impl FnOnce() + Send + 'static) {
     if let Some(backend) = crate::backend::instance() {
         backend.post_event(alloc::boxed::Box::new(func))
     } else {
-        panic!("sixtyfps::invoke_from_event_loop() must be called after starting the event loop.")
+        panic!("sixtyfps::invoke_from_event_loop() must be called after the SixtyFPS backend is initialized.")
     }
 }
